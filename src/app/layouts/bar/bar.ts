@@ -14,4 +14,14 @@ export class barComponent {
    clicklist() {
       this.router.navigate(['/list'])
    }
+   clickhome() {
+      this.router.navigate(['/home'])
+   }
+   clickshop() {
+      this.router.navigate(['/shop'])
+   }
+   clickprofile() {
+      this.router.navigate(['/profile'])
+   }
+
 }
