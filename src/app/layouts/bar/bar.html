@@ -1,0 +1,53 @@
+<div class="flex flex-col h-screen w-md m-auto">
+    <div class="header w-full h-12 bg-[#ffdc80] flex p-4 0 0 " >
+
+        <div  class=" w-4/6">
+            <div class=" w-3 h-3 rounded-full bg-amber-500"></div>
+            
+        </div>
+        <div class="  h-auto flex gap-1 p-1 ">
+            <span class=" w-auto h-auto justify-center">
+                <button class=" flex bg-[#16325a] border-0 rounded-md">
+                    Sign up
+
+                </button>
+            </span >
+            <span class=" w-auto h-auto justify-center">
+                <button class=" flex bg-[#16325a] border-0 rounded-md ">
+                    Sign up
+
+                </button>
+            </span>
+
+        </div>
+    </div>
+    <div class=" bg-[#16325a] flex justify-center"> 
+        <form  class=" p-1 flex gap-1">
+           <button type="submit" class=" bg-amber-200 rounded-full p-0.5">
+            <i class="pi pi-user" style="color: #708090"></i>
+
+           </button> 
+            <input type="search" class=" bg-amber-50 rounded-md border-none">
+        </form>
+    </div>
+
+    <div class="main h-full bg-[#16325a] ">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="footer w-full h-15 bg-[#16325a] grid grid-cols-4 gap-0.5" >
+    <button (click)="clickhome()" class=" border-none rounded-md bg-[#ffdc80]">
+        <i class="pi pi-home" style="color: #708090"></i>
+    </button>
+    <button (click)="clickshop()" class=" border-none rounded-md bg-[#ffdc80]">
+        <i class="pi pi-shopping-cart" style="color: #708090"></i>
+    </button>
+    <button (click)="clicklist()" class= " border-none rounded-md bg-[#ffdc80]">
+        <i class="pi pi-compass" style="color: #708090"></i>
+    </button>
+    <button (click)="clickprofile()" class=" border-none rounded-md bg-[#ffdc80]">
+        <i class="pi pi-user" style="color: #708090"></i>
+    </button>
+    </div>
+
+
+</div>

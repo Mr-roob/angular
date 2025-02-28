@@ -1,0 +1,8 @@
+.formdiv{
+    background-color: rgb(154, 110, 196);
+    height: 45%;
+    width: 35%;
+    padding: 10px;
+    gap: 10px;
+    display: flow-root;
+}
