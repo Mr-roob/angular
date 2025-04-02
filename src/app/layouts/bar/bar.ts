@@ -10,17 +10,18 @@ import { Router, RouterOutlet } from '@angular/router';
 })
 
 export class barComponent {
-   router = Inject(Router)
-   clicklist() {
+   constructor(private router: Router){}
+
+   onclicklist() {
       this.router.navigate(['/list'])
    }
-   clickhome() {
+   onclickhome() {
       this.router.navigate(['/home'])
    }
-   clickshop() {
+   onclickshop() {
       this.router.navigate(['/shop'])
    }
-   clickprofile() {
+   onclickprofile() {
       this.router.navigate(['/profile'])
    }
 

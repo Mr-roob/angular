@@ -1,0 +1,6 @@
+<div class=" grid grid-cols-1 gap-1 ">
+@for (item of getitem; track $index) {
+    <getitem [img]="item.products[0].thumbnail" [pirce]="item.products[0].price"></getitem>
+   
+}
+</div>
